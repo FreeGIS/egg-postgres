@@ -1,0 +1,50 @@
+{
+  "name": "egg-postgres",
+  "version": "1.0.0",
+  "description": "PostgreSQL plugin for egg",
+  "eggPlugin": {
+    "name": "postgres"
+  },
+  "keywords": [
+    "egg",
+    "eggPlugin",
+    "egg-plugin",
+    "postgres",
+    "database"
+  ],
+  "dependencies": {
+    "pg": "^7.18.2"
+  },
+  "devDependencies": {
+    "autod": "^3.0.1",
+    "egg": "latest-1",
+    "egg-bin": "^4.7.0",
+    "egg-ci": "^1.8.0",
+    "egg-mock": "^3.17.1",
+    "eslint": "^4.19.1",
+    "eslint-config-egg": "^7.0.0",
+    "supertest": "^3.1.0",
+    "utility": "^1.13.1"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "scripts": {
+    "test": "npm run lint -- --fix && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run cov",
+    "autod": "autod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freegis/egg-postgres.git"
+  },
+  "bugs": {
+    "url": "https://github.com/FreeGIS/egg-postgres/issues"
+  },
+  "homepage": "https://github.com/FreeGIS/egg-postgres#readme",
+  "author": "freegis",
+  "license": "MIT"
+}
