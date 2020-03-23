@@ -9,7 +9,6 @@ describe('test/postgres.test.js', () => {
   const uid = utility.randomString();
 
   before(() => {
-    console.log('a');
     app = mm.app({
       baseDir: 'apps/postgresapp',
     });
@@ -17,7 +16,6 @@ describe('test/postgres.test.js', () => {
   });
 
   beforeEach(async () => {
-    console.log('b');
     // init test datas
     try {
       await app.postgres.query(`insert into npm_auth(user_id,password) values ('egg-${uid}-1', '1');`);
